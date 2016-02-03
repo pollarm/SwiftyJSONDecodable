@@ -1,0 +1,2 @@
+[submodule "Carthage/Checkouts/SwiftyJSON"]
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
