@@ -250,14 +250,14 @@ public extension SwiftyJSONDecodable where Self : RawRepresentable, Self.RawValu
 
 extension NSDate {
     
-    var toJsonDateTime : String {
+    public var toJsonDateTime : String {
         return JSONDate.dateFormatterNoMillis.stringFromDate(self)
     }
 }
 
 public final class JSONDate : NSDate, SwiftyJSONDecodable {
     
-    static var dateFormatter : NSDateFormatter = {
+    public static var dateFormatter : NSDateFormatter = {
     
         let formatter = NSDateFormatter()
         formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
@@ -266,7 +266,7 @@ public final class JSONDate : NSDate, SwiftyJSONDecodable {
         return formatter
     }()
     
-    static var dateFormatterNoMillis : NSDateFormatter = {
+    public static var dateFormatterNoMillis : NSDateFormatter = {
         
         let formatter = NSDateFormatter()
         formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
