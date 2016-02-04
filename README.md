@@ -1,6 +1,9 @@
 # SwiftyJSONDecodable
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/SwiftyJSONDecodable.svg)](https://img.shields.io/cocoapods/v/SwiftyJSONDecodable.svg)
+[![License](https://img.shields.io/cocoapods/l/SwiftyJSONDecodable.svg?style=flat)](http://cocoapods.org/pods/SwiftyJSONDecodable)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftyJSONDecodable.svg?style=flat)](http://cocoapods.org/pods/SwiftyJSONDecodable)
 
 SwiftyJSONDecodable is a Swift framework that extends [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) to provide simple typesafe decoding of JSON into objects/values via the SwiftyJSONDecodable protocol and helper methods on a JSON extension.
 
@@ -23,6 +26,24 @@ github "pollarm/SwiftyJSONDecodable"
 
 Run `carthage update --platform iOS --no-use-binaries` to build the framework and it's dependencies and drag the built `SwiftyJSON.framework and SwiftyJSONDecodable.framework` into your Xcode project.
 
+### CocoaPods
+
+> CocoaPods 0.39.0+ is required to build SwiftyJSONDecodable.
+
+To integrate SwiftyJSONDecodable into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+platform :ios, '9.0'
+use_frameworks!
+
+pod 'SwiftyJSONDecodable'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ## Getting started
 
